@@ -5,7 +5,14 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="myApp">
+	<div ng-controller="mainCtrl">
+		<h3>Random Talents</h3>
+		<ul ng-repeat = "talent in talents">
+			<li ng-bind="talent"></li>
+		</ul>
+
+	</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   <script src="app.js"></script>
